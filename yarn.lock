@@ -1785,6 +1785,11 @@ parent-module@^1.0.0:
   dependencies:
     callsites "^3.0.0"
 
+patch@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/patch/-/patch-0.0.1.tgz#293056dbbc71c979a1b7273308b12c5460246833"
+  integrity sha512-+SXEoPuYhe44vUXCGAOjEISqgoo26pcSj65xK3zbKGt87CeUoIZ4cHwIkdloHHxGAEIOzMiYmRbj+t0T9pBPXw==
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
