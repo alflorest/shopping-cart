@@ -4,22 +4,20 @@ import { getData } from '../data/getData';
 
 export const DataProductsProvider = ({children}) => {
     const [data, setData] = useState([]);
+    const [Cdata, setCData] = useState([]);    
 
     const fetchData = async()=>{
         const response = await getData();
         setData(response);
+        setCData(response);
     }
     
     useEffect(() => {
         fetchData();
-    }, [])
-    
-    const updateData = (newData) => {
-        setData(newData);
-      };
-
+    }, []);
+      
   return (
-        <DataProductsContext.Provider value={{data, updateData}}> 
+        <DataProductsContext.Provider value={{data, setData, Cdata}}> 
             {children}
         </DataProductsContext.Provider>
     )
